@@ -24,7 +24,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 ```sql
 CREATE DATABASE sql_db_2;
 
--- creating table
+-- CREATING TABLE
 CREATE TABLE Sales_tbl (
 	transactions_id  INT PRIMARY KEY,
 	sale_date DATE,
@@ -48,7 +48,7 @@ CREATE TABLE Sales_tbl (
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
 ```sql
-**DATA CLEANING**
+-- DATA CLEANING
 SELECT COUNT(*) FROM SALES_TBL;
 
 SELECT * FROM SALES_TBL;
@@ -107,13 +107,13 @@ OR
     total_sale IS NULL;
 
 **DATA EXPLORATION**
-**CHECKING SALES**
+-- CHECKING SALES
 SELECT COUNT(*) AS total_sales from sales_tbl;
 
-**CHECKING NUMBER OF UNIQUE CUSTOMERS**
+-- CHECKING NUMBER OF UNIQUE CUSTOMERS
 SELECT COUNT(DISTINCT customer_id) AS total_customers from sales_tbl;
 
-**CHECKING CATEGORIES**
+-- CHECKING CATEGORIES
 SELECT DISTINCT(category) from sales_tbl;
 ```
 
